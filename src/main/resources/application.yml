@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: TestGraphDBProject
+  data:
+    neo4j:
+      database: testdb2
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password:
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          ne041: DEBUG # 내부적으로 돌아가는 native cupenguery를 로그로 찍어준다. 꼭
